@@ -7,7 +7,7 @@ body
 
 .container 
     {
-        width:90%;
+        width:80%;
     }
 
 .nav.header
@@ -29,7 +29,12 @@ body
     {
         width: 100%;
         max-height: 720px;
-        height: 600px;
+        height: 720px;
+        position: relative;
+        background: url(../img/bg.jpeg) no-repeat center top;
+        background-size: cover;
+        font-family: sans-serif;
+
     }
     
 dy {
@@ -213,7 +218,8 @@ dy {
         font-size: 22px;
     }
 
-  .controls {
+.controls
+ {
     width: 100%;
     background: rgb(83, 22, 22);
     padding: 10px;
@@ -223,3 +229,8 @@ dy {
     font-size: 15px;
 
   }
+.slideshow-item-text{
+    color: white;
+
+    left: 0;
+}
