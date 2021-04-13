@@ -44,7 +44,7 @@ dy {
 .login-box 
     {
         width: 320px;
-        height: 420px;
+        height: 500px;
         background:rgb(83, 22, 22);
         color:white;
         top: 50%;
@@ -74,40 +74,16 @@ dy {
         font-size: 22px;
     }
 
-.login-box label 
-    {
-        margin: 0;
-        padding: 0;
-        font-weight: bold;
-        display: block;
-    }
+  .controls {
+    width: 100%;
+    background: rgb(83, 22, 22);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 13px;
+    border: 1px solid brown;
+    font-size: 15px;
 
-.login-box input 
-    {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-.login-box input[type="text"], .login-box input[type="password"]
-    {
-        border: none;
-        border-bottom: 1px solid white;
-        background: transparent;
-        outline: none;
-        height: 40px;
-        color:white;
-        font-size: 16px;
-    }
-
-.login-box input[type="submit"]
-    {
-            border: none;
-            outline: none;
-            height: 40px;
-            background:brown;
-            color: white;
-            font-size: 18px;
-            border-radius: 20px;
-    }
-
-
+  }
+.button{
+    color: red;
+}
