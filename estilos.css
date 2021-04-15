@@ -39,9 +39,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
         font-family: sans-serif;
 
     }
-    
-
-
 
 .recover-box input 
     {
@@ -75,24 +72,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
         top: -50px;
         left: calc(50% - 50px);
     }
-.recover-box .avatar
 
-    {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        position: absolute;
-        top: -50px;
-        left: calc(50% - 50px);
-    }
-
-.recover-box h1
-    {
-        margin: 0;
-        padding: 0 0 20px;
-        text-align: center;
-        font-size: 22px;
-    }
 
 .controls
  {
@@ -177,10 +157,10 @@ footer{
 
 
 
-  .container 
-  {
-      width:80%;
-      margin: auto;
+.container 
+{
+    width:80%;
+    margin: auto;
   }
 
 .nav.header
@@ -209,74 +189,13 @@ footer{
       font-family: sans-serif;
 
   }
-  
-
-
-.recover-box input 
-  {
-      width: 100%;
-      margin-bottom: 20px;
-  }
-.recover-box 
-  {       
-      width: 100%;
-      margin-bottom: 20px;
-      width: 320px;
-      height: 320px;
-      background:rgb(83, 22, 22);
-      color:white;
-      top: 50%;
-      left: 50%;
-      position: absolute;
-      transform: translate(-50%, -50%);
-      box-sizing: border-box;
-      padding: 70px 30px;
-  }
-
-.recover-box .avatar
-
-  {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      position: absolute;
-      top: -50px;
-      left: calc(50% - 50px);
-  }
-
-.recover-box h1
-  {
-      margin: 0;
-      padding: 0 0 20px;
-      text-align: center;
-      font-size: 22px;
-  }
-
-
-
 
 .slideshow-item-text{
   color: white;
 
   left: 0;
 }
-.footer1{
 
-  position:static;
-  margin-top: 100px;
-  bottom: 0; 
-  padding-left: 60px;
-  width: 100%;
-  background: #111;
-}
-footer{
-
-  position: relative;
-  bottom: 0; 
-  padding-left: 60px;
-  width: 100%;
-  background: #111;
-}
 
 .main-content{
   display: inline-flex;
