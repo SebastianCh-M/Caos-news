@@ -119,8 +119,24 @@
             </div>
         </div>
     </div>
-</nav>
+
+
 <hr>
+
+<div class="container">
+    <div class="row">
+        <button id="btn1" class="btn btn-primary">Cordenadas</button>
+    </div>
+    <div class="row">
+        <table class="table" id="tabla1111">
+            <tr>
+                <td>Cuidad</td>
+                <td>Temp Min</td>
+                <td>Temp Max</td>
+            </tr>
+        </table>
+    </div>
+</div>
 
 <footer>
     <div class="footer">
@@ -180,9 +196,43 @@
         </div>
     </div>    
     </footer>
-    
+</body>   
   
     <script src ="js/jquery.js"> </script>
     <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity = "sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</body>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn1").show(
+                function()
+                {
+                    getLocation();
+                }
+            );
+
+        });
+
+        function getLocation(){
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }else{
+                x.innerHTML = "Geolocalizacion no es soportada por este navegador";
+            }
+        }
+
+        function showPosition(position) {
+
+            $("#Longitud").html("Longitud: " + position.coords.longitude);
+            $("#Latitud").html("Latitud: " + position.coords.latitude)
+
+            $.get("http://api.openweathermap.org/data/2.5/weather?units=metric&lat=" + position.coords.latitude + "&lon=" + position.coords.longitude + "&appid=c6d22acc5c9b9e9867188455bf178082",
+                function(data){
+                    $("#tabla1111").append("<tr><td>"+ data.name +"</td><td>" + data.main.temp_min +"</td><td>" + data.main.temp_max + "</td></tr>");
+
+            });
+        }
+    </script>
+
 </html>

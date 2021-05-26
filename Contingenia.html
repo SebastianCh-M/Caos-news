@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caos News</title>
+    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel = "stylesheet" href = "estilos.css">
+    <meta http-equiv = "X-UA-Compatible" content="IE= edge">
+    <meta name = "viewport" content="width =device-width, initial-scale=1.0"> 
+    <link rel="shortcut icon" href= "img/CaosNews.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+</head>
+
+    <div class = "container">
+            
+        <br>
+        <header>
+            <nav class = "navbar navbar-default navbar-static-top">
+                <div class = "container-fluid">
+                    <div class="navbar-header">
+                        <button type = "button" class = "navbar-toggle collapsed" data-toggle = "collapse" data-target = "#navbar-1"> </button>
+                        <span class = "sr-only"> Menu </span>
+
+                        </button>
+                    <img src = "img/CaosNews.png" alt = "Logo CaosNews" class = "nav-brand"> 
+                    <a href = "MainCaosNews.html" class = "navbar-brand"> Caos News </a>
+                    </div>
+
+                    <div class = "collapse navbar-collapse" id = "navbar-1">
+                        <ul class = "nav navbar-nav">
+                            <li> <a href = "MainCaosNews.html"> Inicio </a> </li>
+                            <li> <a href = "IniciarSesión.html"> Iniciar sesión </a> </li>
+                            <li> <a href = "RegistroCaosNew.html"> Registro </a> </li>
+                            <li> <a href = "Categorias.html"> Categorias </a> </li>
+                            <li> <a href = "Crea tu propia noticia.html"> Crea tu propia noticia </a> </li>
+                            
+                        </ul>
+                        <form action = "" class = "navbar-form navbar-right " role = "search">
+                            <div class="form-group">
+                                <input type = "text" class = "form-control" placeholder = "Buscar">
+                            </div>
+                    
+                        </form>
+                    </div>
+                </div>
+            </nav> 
+        </header> 
+    </div>   
+
+    <body>
+
+
+    <div class="container">
+        <div class="row">
+            <button id="btn2">
+                Noticiales Actuales
+            </button>
+        </div>
+        
+        <div class="row">
+            <table class="table" id="tabla2">
+                <tr>
+                    <td>A</td>
+                    <td>A</td>
+                    <td>A</td>
+                    <td>A</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+<script src ="js/jquery.js"> </script>
+<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity = "sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script>
+//Quinta noticia
+$(document).ready(function(){
+        $("#btn2").click(function(){
+            $.get("https://spaceflightnewsapi.net/api/v2/articles/60ad74e9cb56470013cd1328",
+                function(data){
+
+
+                        $("#tabla2").append(
+                            "<tr>"+"<td>" + data.title + "</td>" + "<td>" + data.summary +"</td>" + "<td>" + "<img src='" + data.imageUrl + "'>" + "</td>"+"<td>" + data.publishedAt + "</td>" + "</tr>");
+
+            });
+        });
+    });
+//Primera noticia
+    $(document).ready(function(){
+        $("#btn2").click(function(){
+            $.get("https://spaceflightnewsapi.net/api/v2/articles/60ad4ac7cb56470013cd1325",
+                function(data){
+
+
+                        $("#tabla2").append(
+                            "<tr>"+"<td>" + data.title + "</td>" + "<td>" + data.summary +"</td>" + "<td>" + "<img src='" + data.imageUrl + "'>" + "</td>"+"<td>" + data.publishedAt + "</td>" + "</tr>");
+
+            });
+        });
+    });
+//segunda noticia
+    $(document).ready(function(){
+        $("#btn2").click(function(){
+            $.get("https://spaceflightnewsapi.net/api/v2/articles/60ad485dcb56470013cd1324",
+                function(data){
+
+
+                        $("#tabla2").append(
+                            "<tr>"+"<td>" + data.title + "</td>" + "<td>" + data.summary +"</td>" + "<td>" + "<img src='" + data.imageUrl + "'>" + "</td>"+"<td>" + data.publishedAt + "</td>" + "</tr>");
+
+            });
+        });
+    });
+//Tercera noticia
+    $(document).ready(function(){
+        $("#btn2").click(function(){
+            $.get("https://spaceflightnewsapi.net/api/v2/articles/60ad3ca4cb56470013cd1323",
+                function(data){
+
+
+                        $("#tabla2").append(
+                            "<tr>"+"<td>" + data.title + "</td>" + "<td>" + data.summary +"</td>" + "<td>" + "<img src='" + data.imageUrl + "'>" + "</td>"+"<td>" + data.publishedAt + "</td>" + "</tr>");
+
+            });
+        });
+    });
+//Cuarta noticia
+    $(document).ready(function(){
+        $("#btn2").click(function(){
+            $.get("https://spaceflightnewsapi.net/api/v2/articles/60ad35a0cb56470013cd1322",
+                function(data){
+
+
+                        $("#tabla2").append(
+                            "<tr>"+"<td>" + data.title + "</td>" + "<td>" + data.summary +"</td>" + "<td>" + "<img src='" + data.imageUrl + "'>" + "</td>"+"<td>" + data.publishedAt + "</td>" + "</tr>");
+
+            });
+        });
+    });
+</script>
+
+</html>
