@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -87,7 +88,9 @@
 <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity = "sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin = "anonymous"></script>
 <script src = "https://code.jquery.com/jquery-3.4.1.min.js" integrity = "sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin = "anonymous"></script>
 
+
 <script>
+
 //Primera noticia
     $(document).ready(function(){
         $("#btn2").click(function(){
@@ -122,7 +125,7 @@
 
 
                         $("#tabla2").append(
-                            "<tr>"+"<td>" + data.title + "</td>" + "<td>" + data.summary +"</td>" + "<td>" + "< img src='" + data.imageUrl + "'>" + "</td>"+"<td>" + data.publishedAt + "</td>" + "</tr>");
+                            "<tr>"+"<td>" + data.title + "</td>" + "<td>" + data.summary +"</td>" + "<td>" + "<img src='" + data.imageUrl + "'>" + "</td>"+"<td>" + data.publishedAt + "</td>" + "</tr>");
 
             });
         });
@@ -141,7 +144,7 @@
         });
     });
 //Quinta noticia
-    $(document).ready(function(){
+$(document).ready(function(){
         $("#btn2").click(function(){
             $.get("https://spaceflightnewsapi.net/api/v2/articles/60ad74e9cb56470013cd1328",
                 function(data){
@@ -154,62 +157,5 @@
         });
     });
 </script>
-<footer>
-    <div class="footer">
-        <div class="main-content">
-            <div class="left box">
-                <h2>Redes sociales</h2>
-                <div class="content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, assumenda sit ab aperiam suscipit amet at, earum accusamus eos eveniet voluptatum odit quas laborum in eaque modi maiores asperiores cum cumque vero et eligendi. Maxime in eligendi voluptates illum velit sed eum porro. Error soluta alias reiciendis repellat quas placeat, harum nemo quis. Quos corrupti placeat earum nulla minima cum, ipsam deserunt sit. Fuga laborum saepe magnam excepturi id repudiandae laboriosam facilis? Architecto nostrum quo nihil facere nesciunt aliquid ab exercitationem nobis odit ad obcaecati fuga nam minima magni quam asperiores ipsa iusto, eius tenetur cumque. Nostrum vero quo tenetur? </p>
-                    <div class="social">
-                        <a href="https://www.facebook.com"><span class="fa fa-facebook-f"></span></a>
-                        <a href="https://www.twitter.com"><span class="fa fa-twitter"></span></a>
-                        <a href="https://www.instagram.com"><span class="fa fa-instagram"></span></a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="center box">
-                <h2>Informacion</h2>
-                <div class="content">
-                    <div class="place">
-                        <span class="fa fa-map-o"></span>
-                        <span class="text">Caos news, sucursal en DuocUC San Joaquin</span>
-                    </div>
 
-                    <div class="phone">
-                        <span class="fa fa-phone-square"></span>
-                        <span class="text">+56939458734</span>
-                    </div>
-
-                    <div class="place">
-                        <span class="fa fa-envelope-square"></span>
-                        <span class="text">Info@caosnews.com</span>
-                    </div>
-
-                </div>
-                <div class="row">
-                    <div class="right box">
-                        <h2>Suscribete</h2>
-                        <div class="content">
-                            <form action="#">
-                                <div class="email">
-                                    <div class="text">Email *</div>
-                                    <input type="email" required>
-                                </div>
-                                <div class="msg">
-                                    <div class="text">Message*</div>
-                                    <textarea cols="25" rows="2" required></textarea>
-                                </div>
-                                <div class="btn"></div>
-                                <button type="submit">Enviar</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>    
-    </footer>
 </html>
