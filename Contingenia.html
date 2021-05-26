@@ -36,6 +36,7 @@
                             <li> <a href = "Categorias.html"> Categorias </a> </li>
                             <li> <a href = "Crea tu propia noticia.html"> Crea tu propia noticia </a> </li>
                             <li> <a href = "Contingenia.html"> Contingencia </a> </li>
+                            
                         </ul>
                         <form action = "" class = "navbar-form navbar-right " role = "search">
                             <div class="form-group">
@@ -48,13 +49,12 @@
             </nav> 
         </header> 
     </div>   
-
+ 
     <body>
-
 
     <div class="container">
         <div class="row">
-            <button id="btn2">
+            <button id="btn1">
                 Noticiales Actuales
             </button>
         </div>
@@ -62,10 +62,10 @@
         <div class="row">
             <table class="table" id="tabla2">
                 <tr>
-                    <td>A</td>
-                    <td>A</td>
-                    <td>A</td>
-                    <td>A</td>
+                    <td>Titutlo de la noticia</td>
+                    <td>Noticia</td>
+                    <td>Foto</td>
+                    <td>Fecha</td>
                 </tr>
             </table>
         </div>
@@ -74,27 +74,12 @@
 
 <script src ="js/jquery.js"> </script>
 <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity = "sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
 <script>
-//Quinta noticia
-$(document).ready(function(){
-        $("#btn2").click(function(){
-            $.get("https://spaceflightnewsapi.net/api/v2/articles/60ad74e9cb56470013cd1328",
-                function(data){
-
-
-                        $("#tabla2").append(
-                            "<tr>"+"<td>" + data.title + "</td>" + "<td>" + data.summary +"</td>" + "<td>" + "<img src='" + data.imageUrl + "'>" + "</td>"+"<td>" + data.publishedAt + "</td>" + "</tr>");
-
-            });
-        });
-    });
 //Primera noticia
     $(document).ready(function(){
-        $("#btn2").click(function(){
+        $("#btn1").click(function(){
             $.get("https://spaceflightnewsapi.net/api/v2/articles/60ad4ac7cb56470013cd1325",
                 function(data){
 
@@ -107,7 +92,7 @@ $(document).ready(function(){
     });
 //segunda noticia
     $(document).ready(function(){
-        $("#btn2").click(function(){
+        $("#btn1").click(function(){
             $.get("https://spaceflightnewsapi.net/api/v2/articles/60ad485dcb56470013cd1324",
                 function(data){
 
@@ -120,8 +105,21 @@ $(document).ready(function(){
     });
 //Tercera noticia
     $(document).ready(function(){
-        $("#btn2").click(function(){
+        $("#btn1").click(function(){
             $.get("https://spaceflightnewsapi.net/api/v2/articles/60ad3ca4cb56470013cd1323",
+                function(data){
+
+
+                        $("#tabla2").append(
+                            "<tr>"+"<td>" + data.title + "</td>" + "<td>" + data.summary +"</td>" + "<td>" + "< img src='" + data.imageUrl + "'>" + "</td>"+"<td>" + data.publishedAt + "</td>" + "</tr>");
+
+            });
+        });
+    });
+//Cuarta noticia
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $.get("https://spaceflightnewsapi.net/api/v2/articles/60ad35a0cb56470013cd1322",
                 function(data){
 
 
@@ -131,10 +129,10 @@ $(document).ready(function(){
             });
         });
     });
-//Cuarta noticia
+//Quinta noticia
     $(document).ready(function(){
-        $("#btn2").click(function(){
-            $.get("https://spaceflightnewsapi.net/api/v2/articles/60ad35a0cb56470013cd1322",
+        $("#btn1").click(function(){
+            $.get("https://spaceflightnewsapi.net/api/v2/articles/60ad74e9cb56470013cd1328",
                 function(data){
 
 
