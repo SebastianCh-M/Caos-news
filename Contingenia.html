@@ -74,10 +74,10 @@
         <div class="row">
             <table class="table" id="tabla2">
                 <tr>
-                    <td>Titulo de la noticia</td>
-                    <td>Noticia</td>
-                    <td>Foto</td>
-                    <td>Fecha</td>
+                    <td style="color: white; " > Titulo de la noticia </td>
+                    <td style="color: white; " > Descripción </td>
+                    <td style="color: white; " > Foto </td>
+                    <td style="color: white; " > Fecha </td>
                 </tr>
             </table>
         </div>
@@ -94,7 +94,7 @@
 //Primera noticia
     $(document).ready(function(){
         $("#btn2").click(function(){
-            $.get("https://spaceflightnewsapi.net/api/v2/articles/60ad4ac7cb56470013cd1325",
+            $.get("https://spaceflightnewsapi.net/api/v2/articles/60aecb15b9e9b90012b650ff",
                 function(data){ 
 
 
@@ -146,7 +146,7 @@
 //Quinta noticia
 $(document).ready(function(){
         $("#btn2").click(function(){
-            $.get("https://spaceflightnewsapi.net/api/v2/articles/60ad74e9cb56470013cd1328",
+            $.get("https://spaceflightnewsapi.net/api/v2/articles/60ae306ab9e9b90012b650f4",
                 function(data){
 
 
@@ -157,5 +157,62 @@ $(document).ready(function(){
         });
     });
 </script>
+<footer>
+    <div class="footer1">
+        <div class="main-content">
+            <div class="left box">
+                <h2>Redes sociales</h2>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem illo commodi obcaecati cumque quisquam distinctio, recusandae earum tempora. Dolores eum corrupti at, a vero facere non id magni facilis maxime magnam ipsa aut et tempore nam! Alias iusto dolorum quibusdam, veritatis voluptates laborum. Sed adipisci nisi perspiciatis ratione debitis, expedita ducimus architecto eaque corporis reprehenderit a! Modi sed voluptatum fugit laudantium natus sunt error aliquam debitis voluptates, dolore reprehenderit exercitationem eum! Reprehenderit necessitatibus cum distinctio saepe facilis officia neque nostrum? Eius qui ullam saepe totam ad recusandae, vel cumque sed voluptatibus facere libero sint expedita deserunt nobis voluptates pariatur laborum!</p>
+                    <div class="social">
+                        <a href="https://www.facebook.com"><span class="fa fa-facebook-f"></span></a>
+                        <a href="https://www.twitter.com"><span class="fa fa-twitter"></span></a>
+                        <a href="https://www.instagram.com"><span class="fa fa-instagram"></span></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="center box">
+                <h2>Informacion</h2>
+                <div class="content">
+                    <div class="place">
+                        <span class="fa fa-map-o"></span>
+                        <span class="text">Caos news, sucursal en DuocUC San Joaquin</span>
+                    </div>
+
+                    <div class="phone">
+                        <span class="fa fa-phone-square"></span>
+                        <span class="text">+56939458734</span>
+                    </div>
+
+                    <div class="place">
+                        <span class="fa fa-envelope-square"></span>
+                        <span class="text">Info@caosnews.com</span>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="right box">
+                        <h2>Suscribete</h2>
+                        <div class="content">
+                            <form action="#">
+                                <div class="email">
+                                    <div class="text">Email *</div>
+                                    <input type="email" required>
+                                </div>
+                                <div class="msg">
+                                    <div class="text">Message*</div>
+                                    <textarea cols="25" rows="2" required></textarea>
+                                </div>
+                                <div class="btn"></div>
+                                <button type="submit">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
 </html>
